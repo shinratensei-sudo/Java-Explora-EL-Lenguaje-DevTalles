@@ -3,16 +3,20 @@ package condicionales;
 public class Condicionales {
 
     public static void main(String[] args) {
-        int age = -10;
+        int age = 20;
+        double grade = 5.0;
+        boolean isAdult = age >= 18;
 
-        if (age >= 18) {
-            System.out.println("Es mayor");
-        } else if ( age > 1 && age < 18) {
-            System.out.println("Es menor");
+        boolean hasPassGrade = grade > 5.9;
+
+
+        if (isAdult && hasPassGrade) {
+            System.out.println("el estudiante aprobo");
+        } else if(isAdult && !hasPassGrade) {
+            System.out.println("el estudiante reprobo");
         } else {
-            System.out.println("Dato no valido");
+            System.out.println("no es estudiante");
         }
-
 
         int day = 3;
 
