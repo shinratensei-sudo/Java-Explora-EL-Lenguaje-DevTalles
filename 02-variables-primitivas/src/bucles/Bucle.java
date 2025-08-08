@@ -4,12 +4,13 @@ public class Bucle {
 
     public static void main(String[] args) {
 
-        int i = 0;
-        for (i = 0; i < 5; i++) {
-            System.out.println("Valor: " + i);
+        int MAX_COUNT = 5;
+        int currentNumber = 0;
+        for (currentNumber = 0; currentNumber < MAX_COUNT; currentNumber++) {
+            System.out.println("Valor: " + currentNumber);
         }
 
-        System.out.println("Sale con i=" + i);
+        System.out.println("Sale con i=" + currentNumber);
 
 
         int counter = 0;
